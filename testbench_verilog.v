@@ -30,18 +30,18 @@ module testbench_vending;
   $dumpvars(0,testbench_vending);
   
   #10 in=5'd0;
-  #30 in=5'd5; choice=2'b01;
-  #30 in=5'd5; choice=2'b10;
+  #30 in=5'd10; choice=2'b01;
   #30 in=5'd10; choice=2'b10;
-  #30 in=5'd20; choice=2'b10;
-  #30 in=5'd20; choice=2'b11;  
-  #30 in=5'd5; choice=2'b10;  
+  #30 in=5'd15; choice=2'b10;
+  #30 in=5'd25; choice=2'b10;
+  #30 in=5'd25; choice=2'b11;  
+  #30 in=5'd10; choice=2'b10;  
   #30 extra_cash=5'd10; 
   #20 extra_cash=5'd0;
-  #30 in=5'd10; choice=2'b01;
-  #30 in=5'd20; choice=2'b10;
+  #30 in=5'd15; choice=2'b01;
+  #30 in=5'd25; choice=2'b10;
     
-   
+    #10 $finish;
    end
    
     
