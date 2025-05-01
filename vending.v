@@ -1,3 +1,5 @@
+
+
 module vending(
     input clk,
     input rst,
@@ -41,38 +43,113 @@ module vending(
            case(c_s)
              zero: if(in==m_10 && choice==sel_howrah)
                      n_s<= ten;
-                
-                   else if( in==m_15 && choice==sel_manikaran)
+                     
+                    else if( in==m_10 && choice==sel_manikaran)
                      n_s<= fifteen;
-                 
-                   else if( in==m_25 && choice==sel_esplanade)
+                     
+                    else if( in==m_10 && choice==sel_esplanade)
+                     n_s<= twenty;
+                
+                   else if(in==m_15 && choice==sel_howrah)
+                     n_s<= ten;
+                     
+                    else if( in==m_15 && choice==sel_manikaran)
+                     n_s<= fifteen;
+                     
+                    else if( in==m_15 && choice==sel_esplanade)
+                     n_s<= twenty;
+                     
+                    else if(in==m_25 && choice==sel_howrah)
+                     n_s<= ten;
+                     
+                    else if( in==m_25 && choice==sel_manikaran)
+                     n_s<= fifteen;
+                     
+                    else if( in==m_25 && choice==sel_esplanade)
                      n_s<= twenty;
                      
               ten: if(in==m_10 && choice==sel_howrah)
                      n_s<= ten;
-                
-                   else if( in==m_15 && choice==sel_manikaran)
+                     
+                    else if( in==m_10 && choice==sel_manikaran)
                      n_s<= fifteen;
-                 
-                   else if( in==m_25 && choice==sel_esplanade)
+                     
+                    else if( in==m_10 && choice==sel_esplanade)
                      n_s<= twenty;
+                
+                   else if(in==m_15 && choice==sel_howrah)
+                     n_s<= ten;
+                     
+                    else if( in==m_15 && choice==sel_manikaran)
+                     n_s<= fifteen;
+                     
+                    else if( in==m_15 && choice==sel_esplanade)
+                     n_s<= twenty;
+                     
+                    else if(in==m_25 && choice==sel_howrah)
+                     n_s<= ten;
+                     
+                    else if( in==m_25 && choice==sel_manikaran)
+                     n_s<= fifteen;
+                     
+                    else if( in==m_25 && choice==sel_esplanade)
+                     n_s<= twenty;
+                     
              fifteen: if(in==m_10 && choice==sel_howrah)
                      n_s<= ten;
-                
-                   else if( in==m_15 && choice==sel_manikaran)
+                     
+                    else if( in==m_10 && choice==sel_manikaran)
                      n_s<= fifteen;
-                 
-                   else if( in==m_25 && choice==sel_esplanade)
+                     
+                    else if( in==m_10 && choice==sel_esplanade)
                      n_s<= twenty;
+                
+                   else if(in==m_15 && choice==sel_howrah)
+                     n_s<= ten;
+                     
+                    else if( in==m_15 && choice==sel_manikaran)
+                     n_s<= fifteen;
+                     
+                    else if( in==m_15 && choice==sel_esplanade)
+                     n_s<= twenty;
+                     
+                    else if(in==m_25 && choice==sel_howrah)
+                     n_s<= ten;
+                     
+                    else if( in==m_25 && choice==sel_manikaran)
+                     n_s<= fifteen;
+                     
+                    else if( in==m_25 && choice==sel_esplanade)
+                     n_s<= twenty;
+                     
               
              twenty: if(in==m_10 && choice==sel_howrah)
                      n_s<= ten;
-                
-                   else if( in==m_15 && choice==sel_manikaran)
+                     
+                    else if( in==m_10 && choice==sel_manikaran)
                      n_s<= fifteen;
-                 
-                   else if( in==m_25 && choice==sel_esplanade)
+                     
+                    else if( in==m_10 && choice==sel_esplanade)
                      n_s<= twenty;
+                
+                   else if(in==m_15 && choice==sel_howrah)
+                     n_s<= ten;
+                     
+                    else if( in==m_15 && choice==sel_manikaran)
+                     n_s<= fifteen;
+                     
+                    else if( in==m_15 && choice==sel_esplanade)
+                     n_s<= twenty;
+                     
+                    else if(in==m_25 && choice==sel_howrah)
+                     n_s<= ten;
+                     
+                    else if( in==m_25 && choice==sel_manikaran)
+                     n_s<= fifteen;
+                     
+                    else if( in==m_25 && choice==sel_esplanade)
+                     n_s<= twenty;
+                     
                      
                default: n_s<= zero;
                
@@ -140,7 +217,7 @@ end
                    howrah<=1'b0;
                    manikaran<=1'b1;
                    esplanade<=1'b0;
-                   change=in-10; 
+                   change=in-15; 
                   end 
                  
                 else if( in==m_25)
@@ -148,7 +225,7 @@ end
                    howrah<=1'b0;
                    manikaran<=1'b1;
                    esplanade<=1'b0;
-                   change=in-10; 
+                   change=in-15; 
                   end 
                 end      
                twenty: begin
